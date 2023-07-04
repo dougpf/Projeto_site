@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    
+}
+body {
+    background: linear-gradient(#2e2c2c, #101010, #1f1d1d, #1b1a1a);
+}
+
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-neutral-10);
+    box-shadow: 0px 5px 20px #050505;
+    padding: 20px;
+    justify-content: space-between;
+    align-items:center;
+    gap: 10px;
+}
+
+.menu {
+    display: flex; 
+    flex-wrap: wrap;
+    list-style: none;   
+    text-decoration: underline;
+}
+
+.menu li a {
+    color: #fff;
+    display: block;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    opacity: 0.2;
+    transition: all 0.4s;
+}
+
+.logo {
+    height: 60px;
+    box-shadow: 60px 60px 60px #101010;
+
+}
+
+.hero-teclado h1, .hero-headset h1, .hero-headset h1, .hero-mousepad h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+  
+.hero-teclado p, .hero-headset p, .hero-mouse p, .hero-mousepad p {
+    font-size: 1.0rem;
+    margin-bottom: 30px;
+} 
+.hero-headset, .hero-mouse, .hero-mousepad, .hero-teclado {
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items:center;
+    text-align:center;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 40px;
+    margin: 30px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+.hero-teclado {
+    background-image: url(img/teclado-gamer.jpg);
+}
+    
+.hero-mouse {
+    background-image: url(img/mouse-gamer.jpg);
+}
+  
+.hero-headset {
+    background-image: url(img/headset.jpg);
+}
+
+.hero-mousepad {
+    background-image: url(/img/mousepad.jpg);
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    color: #fff;
+    justify-content: space-between;
+    align-items:center;   
+}
+
+.conteudo div 
+{
+    display:inline;  
+    height: 400px; 
+    box-sizing: border-box;
+    padding: 0 40px;
+    margin: 50px;
+}
+.bloco-1 h1,  .bloco-3 h1{
+    color: #cc4051;
+    font-size: 70px;
+    text-align: right;
+}
+.bloco-2 h1, .bloco-4 h1{
+    color: #765ad0;
+    font-size: 70px;
+    text-align: left;
+}
+
+.bloco-1 p, .bloco-3 p{
+    font-size: 20px;
+    text-align: right;
+}
+.bloco-2 p, .bloco-4 p{
+    font-size: 20px;
+    text-align: left;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+    
+    .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    padding: 20px 100px;
+    }
+    
+.container::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+     width: 100%;
+    height: 100%;  
+    background: url(img/suporte.jpg); 
+     background-size: cover;
+    z-index: -1;
+    filter: blur(50px);    
+}
+    
+.contact-box {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.19);
+}
+.left {
+    height: 100%;
+    background: url(img/suporte.jpg) ;
+    background-size: center;
+    width: 100%;
+}
+.right {
+    padding: 25px 40px;
+}
+    
+.right h2 {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+    
+.right h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #cf3939;
+}
+.field {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0);
+    background-color: rgba(230,230,230,0.6);
+    font-size: 1.1rem;
+    margin: bottom 22px;
+    transition: .3s;
+}
+.field:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.field:focus {
+    background-color: #fff;
+    border: 2px solid rgba(30,85,250,0.47);
+}
+.area {
+    min-height: 150px;
+}
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #cf3939;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+}
+.btn:hover {
+    background-color: #cc7b7b;
+}
+      
+.btn-primary {
+    color: #fff;
+    margin: 10px;
+}
+.btn-primary:hover {
+    color: #fff;
+    opacity: 0.4;
+}
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+    margin-top: -50px;
+}
+.push {
+    height: 50px;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 3.5rem;
+
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+} 
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;    
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.4;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    opacity: 0.2;
+    transition: all 0.4s;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 450px) {
+header {
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}    
+
+#footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.hero-headset, .hero-mouse, .hero-teclado, .hero-mousepad {
+    height: 300px; 
+    max-height: 400px; 
+    width: 100%;
+    margin-left: 10px;
+ }
+
+.hero-headset h1, .hero-mouse h1, .hero-teclado h1, .hero-mousepad h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.hero-headset p, .hero-mouse p, .hero-teclado p, .hero-mousepad p{
+    font-size: 0.90rem;
+    margin-bottom: 10px;
+}
+
+.conteudo {
+grid-template-columns: 1fr;
+padding: 0.5rem;
+
+}
+.bloco-1 p, .bloco-2 p, .bloco-3 p, .bloco-4 p {
+font-size: 0.90rem;
+margin-bottom: 5px;
+}
+
+.contact-box{
+    grid-template-columns: 1fr;
+}
+}
